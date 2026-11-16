@@ -5,14 +5,13 @@ IU DLBDSIDS01-02 Introduction to Data Science, Oral Assignment.
 ## Contents
 | Path | What it is |
 |---|---|
-| `Task3_LinearRegression_Concrete.ipynb` | The analysis, already executed. Part 1: ML paradigms, Part 2: how linear regression works, Part 3: statistical analysis first, then model, tuning, test, bias |
-| `src/` | The dataset: `concrete.csv` (1,030 rows, 8 features + strength) and the original R file it was exported from |
-| `data/` | Identical copy of `src/`. The notebook reads `data/` if it exists, otherwise `src/` |
+| `code-notebook.ipynb` | The analysis, already executed. Part 1: ML paradigms, Part 2: how linear regression works, Part 3: statistical analysis first, then model, tuning, test, bias |
+| `data/concrete.csv` | The dataset (1,030 rows, 8 features + strength). The notebook reads it from `data/` |
 | `figures/` | The 12 figures as PNGs, numbered in notebook order |
 | `outputs/` | Result tables (CSV) and the trained model (`final_model.joblib`) |
-| `pyproject.toml`, `uv.lock`, `.python-version` | Environment: Python 3.13 + exact tested library versions |
+| `pyproject.toml`, `.python-version` | Environment: Python 3.13 and the required libraries |
 | `requirements.txt` | Same libraries for a plain `pip install -r` |
-| `_old_bodyfat_version/` | The previous body-fat version, kept only so nothing is lost. Safe to delete |
+| `.gitignore` | Keeps the local `.venv` out of the repository |
 
 ## Setup on a Mac with Apple Silicon
 All libraries ship native arm64 wheels (no Rosetta, nothing to compile).
@@ -20,17 +19,17 @@ All libraries ship native arm64 wheels (no Rosetta, nothing to compile).
 **Option A: uv (recommended)**
 ```bash
 brew install uv
-cd ~/Desktop/data-course/Task3_LinearRegression
+cd ~/Desktop/data-course/github
 uv sync
-uv run jupyter lab Task3_LinearRegression_Concrete.ipynb
+uv run jupyter lab code-notebook.ipynb
 ```
 
 **Option B: venv + pip**
 ```bash
-cd ~/Desktop/data-course/Task3_LinearRegression
+cd ~/Desktop/data-course/github
 python3 -m venv .venv && source .venv/bin/activate
 pip install .
-jupyter lab Task3_LinearRegression_Concrete.ipynb
+jupyter lab code-notebook.ipynb
 ```
 Then choose *Kernel → Restart Kernel and Run All Cells*. The full run takes about 15 seconds.
 
