@@ -1,0 +1,10 @@
+,weight per unit,unit,95 % CI,p-value,standardised weight (MPa per SD)
+bias w₀,-80.54,MPa (bias w₀),-129.862 to -31.218,1.4e-03,–
+Cement,0.133,MPa per kg/m³,0.118 to 0.149,1.4e-64,13.59
+BlastFurnaceSlag,0.11,MPa per kg/m³,0.091 to 0.129,2.2e-30,9.54
+FlyAsh,0.092,MPa per kg/m³,0.071 to 0.113,4.8e-18,5.88
+Water,-0.113,MPa per kg/m³,-0.190 to -0.037,3.8e-03,-2.43
+Superplasticizer,0.221,MPa per kg/m³,0.048 to 0.394,1.2e-02,1.26
+CoarseAggregate,0.029,MPa per kg/m³,0.012 to 0.046,6.4e-04,2.2
+FineAggregate,0.038,MPa per kg/m³,0.019 to 0.058,1.3e-04,3.19
+log(Age),8.455,MPa per 1 log-day,8.020 to 8.889,< 1e-300,10.16

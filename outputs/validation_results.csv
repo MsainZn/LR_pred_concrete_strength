@@ -1,0 +1,5 @@
+,MAE (MPa),RMSE (MPa),R²,MAPE (%)
+Naive benchmark (always the mean),10.79,13.44,-0.02,49.91
+Plain linear regression,8.12,10.74,0.35,31.65
+Linear regression + log(age),5.91,7.52,0.68,18.89
+Tuned: log(age) + degree 2 + Ridge,4.76,6.38,0.77,15.6

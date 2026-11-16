@@ -1,0 +1,7 @@
+age transform,degree,alpha,train RMSE,CV RMSE,CV RMSE std
+log(age),1,0.0,6.95,7.14,0.61
+log(age),2,0.0,5.3,6.52,0.71
+log(age),3,100.0,5.35,7.39,1.38
+raw days,1,0.0,10.1,10.25,0.28
+raw days,2,0.0,6.89,7.93,0.48
+raw days,3,1.0,4.59,8.58,1.7

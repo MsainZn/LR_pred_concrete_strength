@@ -1,0 +1,30 @@
+[project]
+name = "task3-linear-regression-concrete"
+version = "1.0.0"
+description = "IU DLBDSIDS01-02 Oral Assignment, Task 3: predicting concrete compressive strength with linear regression"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "statsmodels>=0.14.1",
+    "matplotlib>=3.8",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.25",
+]
+
+[project.optional-dependencies]
+# Only needed to re-read the original R .RData file in src/ (the notebook reads the CSV).
+rdata = ["pyreadr>=0.5"]
+
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+bypass-selection = true
+
+[tool.uv]
+package = false
