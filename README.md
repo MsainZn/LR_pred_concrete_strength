@@ -13,20 +13,18 @@ IU DLBDSIDS01-02 Introduction to Data Science, Oral Assignment.
 | `requirements.txt` | Same libraries for a plain `pip install -r` |
 | `.gitignore` | Keeps the local `.venv` out of the repository |
 
-## Setup on a Mac with Apple Silicon
-All libraries ship native arm64 wheels (no Rosetta, nothing to compile).
-
+## Setup
 **Option A: uv (recommended)**
 ```bash
 brew install uv
-cd ~/Desktop/data-course/github
+cd LR_pred_concrete_strength
 uv sync
 uv run jupyter lab code-notebook.ipynb
 ```
 
 **Option B: venv + pip**
 ```bash
-cd ~/Desktop/data-course/github
+cd LR_pred_concrete_strength
 python3 -m venv .venv && source .venv/bin/activate
 pip install .
 jupyter lab code-notebook.ipynb
